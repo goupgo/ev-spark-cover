@@ -1,0 +1,177 @@
+{
+  "project": "EV-SPARK-Cover",
+  "version": "1.3.1",
+  "seed": 42,
+  "run_mode": "paper",
+  "data_zip": "/content/drive/MyDrive/DSP391m - AI1905/data/EV_SPARK_ICTA2026_Data_20260622.zip",
+  "package_dir": "/content/drive/MyDrive/DSP391m - AI1905/outputs/EV_SPARK_Cover/v1_2/paper/cache/data_extract/EV_SPARK_ICTA2026_Data_20260622",
+  "package_source": "v1_2_cache",
+  "v1_2_cache_root": "/content/drive/MyDrive/DSP391m - AI1905/outputs/EV_SPARK_Cover/v1_2/paper/cache",
+  "periods": [
+    "weekday_morning",
+    "weekday_evening",
+    "weekend_midday",
+    "weekend_evening"
+  ],
+  "poi_types": [
+    "tourism_hotel",
+    "market_local",
+    "commercial_industrial_area",
+    "mall_supermarket",
+    "transport_hub",
+    "parking"
+  ],
+  "development_folds": {
+    "1": [
+      "hue",
+      "hungyen",
+      "lamdong",
+      "sonla",
+      "tayninh"
+    ],
+    "2": [
+      "caobang",
+      "daklak",
+      "dienbien",
+      "dongnai",
+      "nghean",
+      "ninhbinh"
+    ],
+    "3": [
+      "bacninh",
+      "dongthap",
+      "langson",
+      "laocai",
+      "quangngai",
+      "thanhhoa"
+    ],
+    "4": [
+      "angiang",
+      "camau",
+      "hatinh",
+      "quangninh",
+      "quangtri",
+      "tuyenquang"
+    ],
+    "5": [
+      "gialai",
+      "khanhhoa",
+      "laichau",
+      "phutho",
+      "thainguyen",
+      "vinhlong"
+    ]
+  },
+  "test_provinces": [
+    "hanoi",
+    "hochiminh",
+    "haiphong",
+    "danang",
+    "cantho"
+  ],
+  "candidate_filter": "optimization_eligible == True",
+  "strict_temporal_filter": "strict_7d_eligible == True",
+  "mode_config": {
+    "demand_radii": [
+      1.0,
+      3.0,
+      5.0
+    ],
+    "demand_alphas": [
+      0.0,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "service_radii": [
+      1.5,
+      2.5,
+      4.0,
+      5.0
+    ],
+    "sigma_ratios": [
+      0.35,
+      0.5,
+      0.75
+    ],
+    "taus": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "equity_lambdas": [
+      0.0,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "dmins": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "dexistings": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "local_passes": [
+      0,
+      1,
+      3
+    ],
+    "budget_fracs": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "tune_budget": 0.05,
+    "random_repeats": 30,
+    "station_blocks": 3,
+    "tune_block_ids": [
+      0,
+      1
+    ],
+    "max_dev_provinces": null,
+    "max_test_provinces": null,
+    "local_candidate_pool": 100,
+    "robustness_block_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      42
+    ],
+    "robustness_partition_modes": [
+      "kmeans",
+      "axis_quantiles"
+    ],
+    "robustness_test_provinces": [
+      "hanoi",
+      "hochiminh",
+      "haiphong",
+      "danang",
+      "cantho"
+    ],
+    "robustness_lodo_max_days": null,
+    "robustness_bootstrap_repeats": 5000
+  },
+  "rules": [
+    "test provinces never used for hyperparameter tuning",
+    "all baselines use the same visible network, candidate eligibility, budget, and evaluator",
+    "results are exported before final audit and plots",
+    "no CatBoost, GNN, MILP, or old teacher labels are used",
+    "v1.3.1 result namespace is isolated; only manifest-verified input caches from v1.2 may be reused",
+    "true no-temporal and true no-existing-network ablations are required",
+    "robustness seeds and alternative partitions are descriptive checks and are never used for tuning",
+    "leave-one-local-day-out analyses keep hyperparameters frozen and do not create pseudo-replicated p-values",
+    "candidate-availability metrics are geometric diagnostics, not feasible budgeted optima",
+    "reported runtime covers site selection only"
+  ]
+}

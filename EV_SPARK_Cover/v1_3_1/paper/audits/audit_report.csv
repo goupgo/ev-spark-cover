@@ -1,0 +1,42 @@
+﻿check,passed,detail
+manifest_all_verified,True,
+candidate_filter_nonempty,True,5509
+test_not_in_development,True,
+frozen_config_exists,True,
+runtime_environment_exists,True,
+cache_reuse_audit_exists,True,
+all_reused_caches_compatible,True,0
+raw_test_export_exists,True,
+selected_sites_export_exists,True,
+ablation_sites_export_exists,True,
+summary_export_exists,True,
+paired_summary_exists,True,
+city_clustered_summary_exists,True,
+candidate_oracle_exists,True,
+block_sensitivity_exists,True,
+temporal_lodo_exists,True,
+temporal_reconstruction_exact,True,1.1368683772161605e-13
+budget_city_ci_exists,True,
+paper_ready_tables_exist,True,
+comprehensive_export_index,True,
+robustness_not_used_for_tuning,True,
+no_pseudoreplication_claim,True,Seeds and LODO windows are summarized descriptively; no p-values are computed across them.
+cell_audits_before_final_all_pass,True,0
+all_successful_selected_within_budget,True,
+all_independent_constraints_pass,True,0
+all_selected_sites_unique_per_run,True,
+all_selected_sites_eligible,True,
+all_selected_sites_match_run_province,True,
+no_nonfinite_primary_metrics,True,
+oracle_dominates_achieved_capture,True,
+normalized_capture_in_unit_interval,True,
+final_redundancy_in_unit_interval,True,"{'min': 0.0, 'max': 0.7168881676685918}"
+ablation_redundancy_in_unit_interval,True,"{'min': 0.015495086923658351, 'max': 0.3308035051493921}"
+no_result_errors,True,0
+no_ablation_errors,True,0
+a1_true_static_inputs,True,A1 flattens demand_weights and current_z before recomputing current_coverage/equity_weights
+a2_removes_existing_exclusion,True,
+b4_name_is_accurate,True,
+selected_site_row_count_matches,True,"{'expected': 40320, 'actual': 40320}"
+ablation_site_row_count_matches,True,"{'expected': 1723, 'actual': 1723}"
+city_clustered_n_pairs_valid,True,

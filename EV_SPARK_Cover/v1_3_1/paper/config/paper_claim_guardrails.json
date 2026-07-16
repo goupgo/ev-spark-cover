@@ -1,0 +1,8 @@
+{
+  "novelty_scope": "Existing-network-aware incremental siting formulation plus retrospective recovery evaluation; no claim of new submodular theory.",
+  "data_window_scope": "Seven-day rolling operational signal; leave-one-complete-local-day-out robustness is descriptive and does not establish seasonal validity.",
+  "statistics_scope": "Primary inference reports effect sizes, bootstrap intervals, block-level paired tests, and city-level directional evidence; seeds are not independent samples.",
+  "oracle_scope": "Candidate-availability geometric diagnostic without budget or pairwise conflicts; not a feasible optimum.",
+  "runtime_scope": "Selection time only; excludes data loading, feature construction, evaluator construction, and export.",
+  "minlp_scope": "Complementary detailed engineering optimization; not a directly benchmarked competitor in this study."
+}

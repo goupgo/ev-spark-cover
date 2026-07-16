@@ -1,0 +1,10 @@
+{
+  "service_radius": 5.0,
+  "sigma_ratio": 0.5,
+  "tau": 2.0,
+  "capture": 0.0837822313196866,
+  "bottom20": 0.10409007173672198,
+  "redundancy": 0.2245076591034101,
+  "runtime": 0.013061578122799625,
+  "instances": 57.0
+}

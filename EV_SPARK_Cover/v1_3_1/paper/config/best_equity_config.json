@@ -1,0 +1,10 @@
+{
+  "equity_lambda": 2.0,
+  "dmin": 0.5,
+  "dexisting": 0.25,
+  "capture": 0.08463957719296,
+  "bottom20": 0.11197612459264752,
+  "redundancy": 0.25257709479642265,
+  "runtime": 0.012624147543858686,
+  "instances": 57.0
+}

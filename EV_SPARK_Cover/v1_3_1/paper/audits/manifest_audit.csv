@@ -1,0 +1,14 @@
+﻿file,exists,expected_bytes,actual_bytes,size_ok,sha256_ok
+README.md,True,642,642,True,True
+benchmark_protocol.json,True,1636,1636,True,True
+candidate_features.parquet,True,2939863,2939863,True,True
+capacity_reference.parquet,True,4105,4105,True,True
+evcs_usage_timeseries_7d.parquet,True,62554491,62554491,True,True
+feature_contract.csv,True,4897,4897,True,True
+legacy_data_audit_by_province.csv,True,4043,4043,True,True
+package_audit.csv,True,354,354,True,True
+poi_nodes.parquet,True,1501669,1501669,True,True
+station_catalog_from_kml.parquet,True,290900,290900,True,True
+station_crawl_summary.parquet,True,1062646,1062646,True,True
+station_model_temporal.parquet,True,1065198,1065198,True,True
+temporal_period_targets.parquet,True,469939,469939,True,True

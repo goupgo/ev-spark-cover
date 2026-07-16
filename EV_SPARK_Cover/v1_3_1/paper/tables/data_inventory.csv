@@ -1,0 +1,7 @@
+﻿table,rows,columns,source
+package_source,0,0,v1_2_cache
+candidate_features_all,19125,55,
+candidate_eligible,5509,55,
+poi_nodes_supported_types,36081,19,
+stations_all,3813,77,
+stations_strict_temporal,3811,77,
