@@ -13,6 +13,7 @@ Repository lưu trữ các tài liệu và kết quả chính của phiên bản
 ## Phương pháp
 
 Pipeline sử dụng:
+![EV-SPARK-Cover architecture](architechture.png)
 
 - Non-negative Ridge để tạo contextual POI weights.
 - Existing-network coverage estimation.
