@@ -13,7 +13,19 @@ Repository lưu trữ các tài liệu và kết quả chính của phiên bản
 ## Phương pháp
 
 Pipeline sử dụng:
+
 ![EV-SPARK-Cover architecture](architechture.png)
+
+Luồng xử lý gồm các bước:
+
+1. **Stations + Candidates + POIs + Budget:** nhận dữ liệu trạm hiện hữu, tập candidate, POIs và ngân sách site-count.
+2. **Validate data and eligibility:** kiểm tra schema, dữ liệu thiếu, candidate eligibility và các ràng buộc loại trừ.
+3. **Estimate existing service:** ước lượng mức phục vụ hiện tại của mạng trạm đang hoạt động.
+4. **Compute service-gap weights:** tăng trọng số cho khu vực có contextual demand nhưng existing service còn thấp.
+5. **Constrained lazy greedy:** chọn site theo marginal gain dưới budget và spatial constraints.
+6. **Ranked site shortlist:** xuất danh sách candidate được xếp hạng để chuyển sang bước kiểm tra land, grid, cost và feasibility.
+
+Các thành phần chính:
 
 - Non-negative Ridge để tạo contextual POI weights.
 - Existing-network coverage estimation.
